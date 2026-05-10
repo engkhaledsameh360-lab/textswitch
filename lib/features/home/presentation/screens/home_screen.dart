@@ -41,6 +41,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 label: AppStrings.changeMessageButton,
                 onPressed: _controller.updateMessage,
               ),
+              const SizedBox(height: 16),
+              ActionButton(
+                label: AppStrings.resetMessageButton,
+                onPressed: _controller.resetMessage,
+              ),
             ],
           ),
         ),

@@ -10,4 +10,9 @@ class HomeController extends ChangeNotifier {
     _currentMessage = AppStrings.updatedMessage;
     notifyListeners();
   }
+
+  void resetMessage() {
+    _currentMessage = AppStrings.initialMessage;
+    notifyListeners();
+  }
 }
